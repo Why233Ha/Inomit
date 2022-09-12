@@ -1,4 +1,5 @@
 @import url(var.css);
+@import url(compose.css);
 
 body {
   margin: 0;

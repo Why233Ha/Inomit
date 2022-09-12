@@ -1,0 +1,9 @@
+div#appbar {
+  width: 100vw;
+  height: 56px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  background: rgb(48 48 48 / 40%);
+  backdrop-filter: saturate(200%) blur(20px);
+}
