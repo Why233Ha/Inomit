@@ -1,0 +1,50 @@
+<?xml-stylesheet href= "../css/core.css" type= "text/css"?>
+<svg width="1152" height="1152" viewBox="0 0 1152 1152" fill="none" xmlns="http://www.w3.org/2000/svg"
+    style="background: black;">
+    <path part1=""
+        d="M413.578 374.173C425.824 366.674 429.672 350.668 422.173 338.422C414.674 326.176 398.668 322.328 386.422 329.827L413.578 374.173ZM53.7485 684C53.7485 760.583 115.832 822.667 192.415 822.667C268.999 822.667 331.082 760.583 331.082 684C331.082 607.417 268.999 545.333 192.415 545.333C115.832 545.333 53.7485 607.417 53.7485 684ZM386.422 329.827C166.5 464.496 142.94 621.096 167.865 692.562L216.965 675.438C202.635 634.351 207.152 500.577 413.578 374.173L386.422 329.827Z"
+        fill="white" style="mix-blend-mode:difference" />
+    <path part2=""
+        d="M475.275 859.98C460.97 858.724 448.356 869.302 447.1 883.606C445.843 897.91 456.421 910.525 470.725 911.781L475.275 859.98ZM948.818 824.958C994.371 763.396 981.394 676.562 919.832 631.008C858.27 585.454 771.435 598.432 725.881 659.994C680.328 721.556 693.305 808.391 754.868 853.944C816.43 899.498 903.264 886.52 948.818 824.958ZM470.725 911.781C727.615 934.341 839.704 822.47 862.177 750.196L812.522 734.756C799.602 776.308 716.399 881.156 475.275 859.98L470.725 911.781Z"
+        fill="white" style="mix-blend-mode:difference" />
+    <path part3=""
+        d="M715.01 511.407C714.755 525.764 726.186 537.61 740.544 537.865C754.901 538.12 766.746 526.689 767.002 512.331L715.01 511.407ZM647.041 41.4602C582.451 0.311976 496.733 19.3151 455.585 83.9049C414.437 148.495 433.44 234.212 498.03 275.361C562.62 316.509 648.337 297.506 689.485 232.916C730.634 168.326 711.631 82.6085 647.041 41.4602ZM767.002 512.331C771.587 254.494 652.17 150.482 578.505 133.105L566.566 183.716C608.918 193.706 719.314 269.393 715.01 511.407L767.002 512.331Z"
+        fill="white" style="mix-blend-mode:difference" />
+
+    <style>
+        [part1] {
+            transform-origin: center;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-name: rotter;
+            animation-duration: 1000ms;
+        }
+
+        [part2] {
+            transform-origin: center;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-name: rotter;
+            animation-duration: 1200ms;
+        }
+
+        [part3] {
+            transform-origin: center;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-name: rotter;
+            animation-duration: 1455ms;
+        }
+
+        @keyframes rotter {
+            0% {
+                transform: rotateZ(0deg);
+
+            }
+
+            100% {
+                transform: rotateZ(-360deg);
+            }
+        }
+    </style>
+</svg>

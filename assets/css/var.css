@@ -1,0 +1,18 @@
+:root {
+  --c-black: #000000;
+  --c-white: #ffffff;
+  --c-blue: #2196f3;
+
+  --c-primary: var(--c-blue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: var(--c-black);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --c-bg: var(--c-white);
+  }
+}

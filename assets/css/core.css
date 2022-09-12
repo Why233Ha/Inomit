@@ -1,0 +1,24 @@
+@import url(var.css);
+
+body {
+  margin: 0;
+}
+[launch] {
+  position: fixed;
+  top: 32%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 45%;
+  max-width: 648px;
+}
+[spott] {
+  width: 4%;
+  max-width: 72px;
+  position: fixed;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
