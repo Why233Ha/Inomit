@@ -8,23 +8,78 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/core.css">
+
+    <script src="../../libs/jq.js"></script>
+    <script src="../../libs/compose.js"></script>
+    <script
+        src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19073_6.281bd42ccbf62542e77b43922657c032.js"></script>
+
+    <script>
+
+        +function () {
+            loadImage('https://v.api.aa1.cn/api/api-gqsh/index.php?wpon=s3s398eu7y6dt7e24', imgLoaded);
+        }();
+
+        function loadImage(url, callback) {
+            var img = new Image();
+            img.src = url;
+            img.onload = function () { //图片下载完毕时异步调用callback函数。
+                callback.call(img); // 将callback函数this指针切换为img。
+            };
+        }
+
+        function imgLoaded() {
+            var img = document.getElementById("bg");
+            img.setAttribute("src", this.src);
+            if (img.style.opacity != undefined) {
+                img.style.opacity = 1;
+            }
+        }
+
+    </script>
 </head>
 
 <body>
+
+
     <style>
-        body {
-            background: url(https://v.api.aa1.cn/api/api-gqsh/index.php?wpon=s3s398eu7y6dt7e24) no-repeat;
+        img#bg {
             height: 100vh;
             width: 100vw;
             overflow: hidden;
-            background-size: cover;
+            object-fit: cover;
+            position: fixed;
+            z-index: -1;
+            background-color: #000000;
+            opacity: 0;
         }
-        @media screen and (max-width:600px)
     </style>
+
+    <img id="bg" src="https://v.api.aa1.cn/api/api-gqsh/index.php?wpon=s3s398eu7y6dt7e24" alt="">
 
     <div id="appbar">
 
     </div>
+
+    <script>
+        let startMenu = new Button();
+        let powerMenu = new Button();
+        let appbarHeader = new View();
+
+        startMenu.m = "icon";
+        powerMenu.m = "icon"
+
+        appbarHeader.init("#appbar");
+        appbarHeader.attrAdd("appbar-item", "header");
+
+        startMenu.icon = "apps";
+        startMenu.init(selectorGet(appbarHeader.idx));
+        startMenu.attrAdd("appbar-item", "button");
+
+        powerMenu.icon = "power";
+        powerMenu.init(selectorGet(appbarHeader.idx));
+        powerMenu.attrAdd("appbar-item", "button");
+    </script>
 </body>
 
 </html>

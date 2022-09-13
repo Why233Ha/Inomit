@@ -1,9 +1,41 @@
 div#appbar {
   width: 100vw;
-  height: 56px;
-  position: fixed;
   bottom: 0;
+  position: fixed;
   z-index: 9999;
-  background: rgb(48 48 48 / 40%);
-  backdrop-filter: saturate(200%) blur(20px);
+  display: flex;
+  background: hsl(0deg 0% 50% / 70%);
+  backdrop-filter: saturate(200%) blur(24px);
+  align-content: stretch;
+  align-items: center;
+}
+
+[appbar-item="header"] {
+  height: 100%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+btn[m="icon"] {
+  font-size: 16pt;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+btn[m="icon"]:hover {
+  background-color: hsl(0, 0%, 75%);
+}
+btn[m="icon"]:active {
+  background-color: hsla(0, 0%, 75%, 75%);
+}
+btn[m="icon"] > iconpark-icon {
+  width: 100%;
+  height: 100%;
 }
